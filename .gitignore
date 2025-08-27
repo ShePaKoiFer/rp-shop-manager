@@ -1,0 +1,22 @@
+# --- Fichiers sensibles ---
+.env.php
+config/*.php
+
+# --- Dépendances et librairies ---
+vendor/
+node_modules/
+
+# --- Fichiers système ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Logs & backups ---
+*.log
+*.sql
+*.bak
+*.tmp
+
+# --- Cache ---
+.cache/
+tmp/
