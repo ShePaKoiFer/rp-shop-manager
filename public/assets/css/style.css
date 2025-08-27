@@ -1,0 +1,98 @@
+/* --- Thème sombre global --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+/* --- Login --- */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.login-container input {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login-container button:hover {
+    background: #005fa3;
+}
+.error {
+    color: #ff6b6b;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* --- Dashboard cards --- */
+.dashboard {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+.card {
+    flex: 1;
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #ccc;
+}
+.card .value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* --- Toast notifications --- */
+.toast-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+.toast {
+    background: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-top: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
